@@ -1,0 +1,134 @@
+{
+    "device": [
+        {
+            "vendorName": "IoTOAK",
+            "vendorURL": "https://iotoak.com/",
+            "deviceName": "DUMMY TEST DEVICE",
+            "deviceModel": "X1234",
+            "deviceCode": "0987654321",
+            "deviceRevision": "1.00",
+            "slaves": [
+                {
+                    "slaveId": 1,
+                    "discreteInputs": [
+                        {
+                            "offset":"0x01",
+                            "bit_position": "0x0F",
+                            "behaviour": "const",
+                            "type": "BIT",
+                            "value": [1]
+                        },
+                        {
+                            "offset":"0x01",
+                            "bit_position": "0x00",
+                            "behaviour": "const",
+                            "type": "BIT",
+                            "value": [1]
+                        },
+                        {
+                            "bit_position": "0x01",
+                            "behaviour": "const",
+                            "type": "BIT",
+                            "value": [1]
+                        },
+                        {
+                            "offset": "0x01",
+                            "behaviour": "const",
+                            "type": "F32",
+                            "value": ["0b1111000011111111"]
+                        },
+                        {
+                            "offset": "0x03",
+                            "bit_position": 7,
+                            "behaviour": "const",
+                            "type": "BIT",
+                            "value": [1]
+                        }
+                    ],
+                    "coilsInitializer": [
+                        {
+                            "offset":"0x01",
+                            "bit_position": "0x00",
+                            "behaviour": "const",
+                            "type": "BIT",
+                            "value": [1]
+                        },
+                        {
+                            "offset":"0x01",
+                            "bit_position": "0x01",
+                            "behaviour": "const",
+                            "type": "BIT",
+                            "value": [1]
+                        },
+                        {
+                            "offset":"0x01",
+                            "bit_position": "0x03",
+                            "behaviour": "const",
+                            "type": "BIT",
+                            "value": [1]
+                        },
+                        {
+                            "offset": "0x02",
+                            "behaviour": "const",
+                            "type": "F32",
+                            "value": ["0xFF000000"]
+                        },
+                        {
+                            "offset": "0x04", 
+                            "bit_position": 7,
+                            "behaviour": "const",
+                            "type": "BIT",
+                            "value": [1]
+                        }
+                    ],
+                    "holdingRegisters": [
+                        {
+                            "offset": "0x01",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": ["0xFFFF"]
+                        },
+                        {
+                            "offset": "0x02",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": ["0xFFFF"]
+                        },
+                        {
+                            "offset": "0x03",
+                            "behaviour": "const",
+                            "type": "U32",
+                            "value": ["-2000000000"]
+                        },
+                        {
+                            "offset": "0x05",
+                            "behaviour": "const",
+                            "type": "STR",
+                            "value": ["ABCDEFGH"]
+                        }
+                    ],
+                    "inputRegisters": [
+                        {
+                            "offset": "0x01",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [1]
+                        },
+                        {
+                            "offset": "0x02",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [1]
+                        },
+                        {
+                            "offset": "0x03",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [1]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
