@@ -12,99 +12,147 @@
                     "slaveId": 1,
                     "discreteInputs": [
                         {
-                            "offset":"0x01",
+                            "offset": "0x01",
                             "bit_position": "0x0F",
                             "behaviour": "const",
                             "type": "BIT",
-                            "value": [1]
+                            "value": [
+                                1
+                            ]
                         },
                         {
-                            "offset":"0x01",
+                            "offset": "0x01",
                             "bit_position": "0x00",
                             "behaviour": "const",
                             "type": "BIT",
-                            "value": [1]
+                            "value": [
+                                1
+                            ]
                         },
                         {
                             "bit_position": "0x01",
                             "behaviour": "const",
                             "type": "BIT",
-                            "value": [1]
+                            "value": [
+                                1
+                            ]
                         },
                         {
                             "offset": "0x01",
                             "behaviour": "const",
                             "type": "F32",
-                            "value": ["0b1111000011111111"]
+                            "value": [
+                                "0b1111000011111111"
+                            ]
                         },
                         {
                             "offset": "0x03",
                             "bit_position": 7,
                             "behaviour": "const",
                             "type": "BIT",
-                            "value": [1]
+                            "value": [
+                                1
+                            ]
                         }
                     ],
                     "coilsInitializer": [
                         {
-                            "offset":"0x01",
+                            "offset": "0x01",
                             "bit_position": "0x00",
                             "behaviour": "const",
                             "type": "BIT",
-                            "value": [1]
+                            "value": [
+                                1
+                            ]
                         },
                         {
-                            "offset":"0x01",
+                            "offset": "0x01",
                             "bit_position": "0x01",
                             "behaviour": "const",
                             "type": "BIT",
-                            "value": [1]
+                            "value": [
+                                1
+                            ]
                         },
                         {
-                            "offset":"0x01",
+                            "offset": "0x01",
                             "bit_position": "0x03",
                             "behaviour": "const",
                             "type": "BIT",
-                            "value": [1]
+                            "value": [
+                                1
+                            ]
                         },
                         {
                             "offset": "0x02",
                             "behaviour": "const",
                             "type": "F32",
-                            "value": ["0xFF000000"]
+                            "value": [
+                                "0xFF000000"
+                            ]
                         },
                         {
-                            "offset": "0x04", 
+                            "offset": "0x04",
                             "bit_position": 7,
                             "behaviour": "const",
                             "type": "BIT",
-                            "value": [1]
+                            "value": [
+                                1
+                            ]
                         }
                     ],
                     "holdingRegisters": [
                         {
                             "offset": "0x01",
-                            "behaviour": "const",
+                            "behaviour": "pattern",
                             "type": "U16",
-                            "value": ["0xFFFF"]
+                            "period": 0.5,
+                            "value": [
+                                0,
+                                1,
+                                2,
+                                3,
+                                4,
+                                5,
+                                6,
+                                7,
+                                8,
+                                9,
+                                10,
+                                11,
+                                12,
+                                13,
+                                14,
+                                15
+                            ]
                         },
                         {
                             "offset": "0x02",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": ["0xFFFF"]
+                            "behaviour": "random",
+                            "period": 1,
+                            "range": [
+                                -100000,
+                                100000
+                            ],
+                            "type": "S32"
                         },
                         {
-                            "offset": "0x03",
-                            "behaviour": "const",
+                            "offset": "0x04",
+                            "behaviour": "random",
+                            "period": 0.1,
                             "type": "U32",
-                            "value": ["-2000000000"]
+                            "range": [
+                                0,
+                                1000
+                            ]
                         },
                         {
-                            "offset": "0x05",
+                            "offset": "0x06",
                             "behaviour": "const",
                             "type": "STR",
-                            "value": ["ABCDEFGH"]
+                            "value": [
+                                "ABCDEFGH"
+                            ]
                         }
                     ],
                     "inputRegisters": [
@@ -112,19 +160,25 @@
                             "offset": "0x01",
                             "behaviour": "const",
                             "type": "U16",
-                            "value": [1]
+                            "value": [
+                                1
+                            ]
                         },
                         {
                             "offset": "0x02",
                             "behaviour": "const",
                             "type": "U16",
-                            "value": [1]
+                            "value": [
+                                1
+                            ]
                         },
                         {
                             "offset": "0x03",
                             "behaviour": "const",
                             "type": "U16",
-                            "value": [1]
+                            "value": [
+                                1
+                            ]
                         }
                     ]
                 }
