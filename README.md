@@ -23,7 +23,7 @@ app/dmss.py -h
 ```
 
 ```text
-usage: dmss.py [-h] -p PORT [-b BAUD] [-d {8,9}] [-n {1,2,3}] [-s {1,1.5,2}] [-c CONFIG]
+usage: dmss.py [-h] [-p PORT] [-b BAUD] [-d {8,9}] [-n {1,2,3}] [-s {1,1.5,2}] [-r REFRESH] [-c CONFIG]
 
 dmss.py (Dummy Modbus Slave Server) is configurable modbus slave device simulator.
 Register configuration for such fake device, must be provided in form JSON file format.
@@ -45,13 +45,15 @@ optional arguments:
                         3 -> Odd
   -s {1,1.5,2}, --stop {1,1.5,2}
                         serial port stop bits
+  -r REFRESH, --refresh REFRESH
+                        maximum refresh frequency for registers (1 - 1000Hz)
   -c CONFIG, --config CONFIG
                         MODBUS RTU Device configuration file
 ```
 
 # TODO
-- [ ] enable possibility to change values in registers while program is running
-- [ ] add possiblity to specify refresh rate of values in register for each entity
+- [x] enable possibility to change values in registers while program is running
+- [x] add possiblity to specify refresh rate of values in register for each entity
 - [ ] add more comments to code to make it more readible 
 
 # Bugs reporting
