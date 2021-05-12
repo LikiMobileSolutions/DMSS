@@ -4,7 +4,6 @@ import logging
 import sys
 import time
 import threading
-import pynput
 import os.path
 from colorama import Fore, Style
 
@@ -19,30 +18,6 @@ log.setLevel(logging.DEBUG)
 
 end_program = False
 
-quit_key_combination = [
-    {pynput.keyboard.Key.ctrl, pynput.keyboard.KeyCode(char="q")},
-    {pynput.keyboard.Key.ctrl_l, pynput.keyboard.KeyCode(char="q")},
-    {pynput.keyboard.Key.ctrl_r, pynput.keyboard.KeyCode(char="q")},
-]
-
-current = set()
-
-
-def on_press(key):
-    global end_program
-    if any([key in comb for comb in quit_key_combination]):
-        current.add(key)
-        if any(all(k in current for k in comb) for comb in quit_key_combination):
-            end_program = True
-
-
-def on_release(key):
-    try:
-        current.remove(key)
-    except KeyError:
-        pass
-
-
 def main():
     program_description = (
         f"{Fore.YELLOW}dmss.py (Dummy Modbus Slave Server) is configurable modbus slave device simulator.\r\n"
@@ -52,7 +27,7 @@ def main():
     )
     program_description += "For examples of such configuration please look int configs/test.json file.\r\n"
     program_description += "\r\n"
-    program_description += f"{Fore.RED}To quit server, please hit CTRL + q key combination!{Style.RESET_ALL}"
+    program_description += f"{Fore.RED}To quit server, please hit CTRL + Z key combination!{Style.RESET_ALL}"
     args = ArgumentParser(description=program_description, formatter_class=RawTextHelpFormatter)
     args.add_argument(
         "-p",
@@ -131,17 +106,17 @@ def main():
     ms = ModbusServer("ModbusThread", device, serial, global_refresh_rate)
     ms.start()
 
-    global end_program
-    listener = pynput.keyboard.Listener(on_press=on_press, on_release=on_release)
-    listener.start()
+    log.info("To STOP program hit CTRL + Z")
 
-    while end_program == False and ms.is_alive():
-        time.sleep(1)
+    while True:
+        try:
+            time.sleep(1)
+        except:
+            log.info("Detected keyboard interrupt. Program will now terminate")
+            break
 
     if ms.is_alive():
         ms.stop()
-    listener.stop()
-
 
 if __name__ == "__main__":
     main()
