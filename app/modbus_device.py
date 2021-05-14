@@ -127,9 +127,9 @@ class ModbusDeviceIOEntity:
 
         if "offset" in slave_description:
             self.__offset = to_int(slave_description["offset"])
-            if self.__offset < 1:
-                log.error('"offset" value cannot be lower than 1!')
-                raise RuntimeError()
+            # if self.__offset < 1:
+            #     log.error('"offset" value cannot be lower than 1!')
+            #     raise RuntimeError()
         else:
             self.__offset = None
 

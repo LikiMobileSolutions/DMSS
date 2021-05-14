@@ -44,7 +44,7 @@ class ModbusServer(threading.Thread):
             holding_regs = ModbusSparseDataBlock(slave.get_holding_registers())
             input_regs = ModbusSparseDataBlock(slave.get_in_registers())
             self.__store[slave.get_slave_id()] = ModbusSlaveContext(
-                di=digital_inputs, co=coils, ir=input_regs, hr=holding_regs
+                di=digital_inputs, co=coils, ir=input_regs, hr=holding_regs, zero_mode=True
             )
         self.__context = ModbusServerContext(slaves=self.__store, single=False)
 
