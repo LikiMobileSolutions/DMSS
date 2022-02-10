@@ -221,10 +221,19 @@ class ModbusSlave:
         for i_reg in slave_desc_dict["inputRegisters"]:
             self.__e_in_registers.append(ModbusDeviceIOEntity("inputRegisters", i_reg, self.__registers_refresh_rate))
 
-        self.__discrete_inputs = d_sort(self.__convert_entities_to_dictionary(self.__e_discrete_inputs))
-        self.__coils = d_sort(self.__convert_entities_to_dictionary(self.__e_coils))
-        self.__out_registers = d_sort(self.__convert_entities_to_dictionary(self.__e_out_registers))
-        self.__in_registers = d_sort(self.__convert_entities_to_dictionary(self.__e_in_registers))
+        self.__discrete_inputs = {}
+        self.__coils = {}
+        self.__out_registers = {}
+        self.__in_registers = {}
+
+        if len(self.__e_discrete_inputs) > 0: 
+            self.__discrete_inputs = d_sort(self.__convert_entities_to_dictionary(self.__e_discrete_inputs))
+        if len(self.__e_coils) > 0: 
+            self.__coils = d_sort(self.__convert_entities_to_dictionary(self.__e_coils))
+        if len(self.__e_out_registers) > 0: 
+            self.__out_registers = d_sort(self.__convert_entities_to_dictionary(self.__e_out_registers))
+        if len(self.__e_in_registers) > 0: 
+            self.__in_registers = d_sort(self.__convert_entities_to_dictionary(self.__e_in_registers))
 
         self.__updatable_discrete_inputs = []
         self.__updatable_coils = []

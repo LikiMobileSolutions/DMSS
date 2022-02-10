@@ -3,113 +3,563 @@
         {
             "vendorName": "F&F",
             "vendorURL": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-            "deviceName": "Energy Meter",
-            "deviceModel": "LE03MQ",
+            "deviceName": "energy_meter",
+            "deviceModel": "LE-03MQ",
             "deviceCode": "2137",
-            "deviceRevision": "1.337",
+            "deviceRevision": "4.2.0",
             "slaves": [
                 {
                     "slaveId": 1,
-
-                    "discreteInputs": [{
-                        "offset": "0x01",
-                        "bit_position": "0x0F",
-                        "behaviour": "const",
-                        "type": "BIT",
-                        "value": [
-                            1
-                        ]
-                    }
-                                    ],
-                    "coilsInitializer": [
-                        {
-                            "offset": "0x01",
-                            "bit_position": "0x00",
-                            "behaviour": "const",
-                            "type": "BIT",
-                            "value": [
-                                1
-                            ]
-                        }
-                    ],
-                    "holdingRegisters": [
-
-                        {
-                            "offset": "0x01",
-                            "behaviour": "pattern",
-                            "type": "U16",
-                            "period": 0.5,
-                            "value": [
-                                0,
-                                1,
-                                2,
-                                3,
-                                4,
-                                5,
-                                6,
-                                7,
-                                8,
-                                9,
-                                10,
-                                11,
-                                12,
-                                13,
-                                14,
-                                15
-                            ]
-                        }
-                    ],
+                    "discreteInputs": [],
+                    "coilsInitializer": [],
+                    "holdingRegisters": [],
                     "inputRegisters": [
                         {
-                            "offset": "0x0 ",
+                            "offset": "0x0",
                             "behaviour": "const",
                             "type": "U16",
                             "value": [
-                                17249
+                                17254
                             ]
                         },
                         {
-                            "offset": "0x1 ",
+                            "offset": "0x1",
                             "behaviour": "const",
                             "type": "U16",
                             "value": [
-                                63862
+                                13763
                             ]
                         },
                         {
-                            "offset": "0x2 ",
+                            "offset": "0x2",
                             "behaviour": "const",
                             "type": "U16",
                             "value": [
-                                17250
+                                17255
                             ]
                         },
                         {
-                            "offset": "0x3 ",
+                            "offset": "0x3",
                             "behaviour": "const",
                             "type": "U16",
                             "value": [
-                                112
+                                51118
                             ]
                         },
                         {
-                            "offset": "0x4 ",
+                            "offset": "0x4",
                             "behaviour": "const",
                             "type": "U16",
                             "value": [
-                                17249
+                                17256
                             ]
                         },
                         {
-                            "offset": "0x5 ",
+                            "offset": "0x5",
                             "behaviour": "const",
                             "type": "U16",
                             "value": [
-                                62450
+                                13763
                             ]
                         },
                         {
-                            "offset": "0x6 ",
+                            "offset": "0x6",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                16599
+                            ]
+                        },
+                        {
+                            "offset": "0x7",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                44564
+                            ]
+                        },
+                        {
+                            "offset": "0x8",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                16697
+                            ]
+                        },
+                        {
+                            "offset": "0x9",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                18350
+                            ]
+                        },
+                        {
+                            "offset": "0xA",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                16522
+                            ]
+                        },
+                        {
+                            "offset": "0xB",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                15729
+                            ]
+                        },
+                        {
+                            "offset": "0xC",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                17590
+                            ]
+                        },
+                        {
+                            "offset": "0xD",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                12943
+                            ]
+                        },
+                        {
+                            "offset": "0xE",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                17695
+                            ]
+                        },
+                        {
+                            "offset": "0xF",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                51200
+                            ]
+                        },
+                        {
+                            "offset": "0x10",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                17514
+                            ]
+                        },
+                        {
+                            "offset": "0x11",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                50299
+                            ]
+                        },
+                        {
+                            "offset": "0x12",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                17600
+                            ]
+                        },
+                        {
+                            "offset": "0x13",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                30638
+                            ]
+                        },
+                        {
+                            "offset": "0x14",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                17701
+                            ]
+                        },
+                        {
+                            "offset": "0x15",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                30638
+                            ]
+                        },
+                        {
+                            "offset": "0x16",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                17518
+                            ]
+                        },
+                        {
+                            "offset": "0x17",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                42598
+                            ]
+                        },
+                        {
+                            "offset": "0x18",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                17400
+                            ]
+                        },
+                        {
+                            "offset": "0x19",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                12780
+                            ]
+                        },
+                        {
+                            "offset": "0x1A",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                17452
+                            ]
+                        },
+                        {
+                            "offset": "0x1B",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                3768
+                            ]
+                        },
+                        {
+                            "offset": "0x1C",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                17195
+                            ]
+                        },
+                        {
+                            "offset": "0x1D",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                45220
+                            ]
+                        },
+                        {
+                            "offset": "0x1E",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                16240
+                            ]
+                        },
+                        {
+                            "offset": "0x1F",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                41943
+                            ]
+                        },
+                        {
+                            "offset": "0x20",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                16245
+                            ]
+                        },
+                        {
+                            "offset": "0x21",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                49807
+                            ]
+                        },
+                        {
+                            "offset": "0x22",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                16250
+                            ]
+                        },
+                        {
+                            "offset": "0x23",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                57672
+                            ]
+                        },
+                        {
+                            "offset": "0x24",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                16777
+                            ]
+                        },
+                        {
+                            "offset": "0x25",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                28836
+                            ]
+                        },
+                        {
+                            "offset": "0x26",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                16732
+                            ]
+                        },
+                        {
+                            "offset": "0x27",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                52429
+                            ]
+                        },
+                        {
+                            "offset": "0x28",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                16731
+                            ]
+                        },
+                        {
+                            "offset": "0x29",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                13107
+                            ]
+                        },
+                        {
+                            "offset": "0x2A",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                17254
+                            ]
+                        },
+                        {
+                            "offset": "0x2B",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                8520
+                            ]
+                        },
+                        {
+                            "offset": "0x2C",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                16628
+                            ]
+                        },
+                        {
+                            "offset": "0x2D",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                10486
+                            ]
+                        },
+                        {
+                            "offset": "0x2E",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                16823
+                            ]
+                        },
+                        {
+                            "offset": "0x2F",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                18350
+                            ]
+                        },
+                        {
+                            "offset": "0x30",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                17820
+                            ]
+                        },
+                        {
+                            "offset": "0x31",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                25354
+                            ]
+                        },
+                        {
+                            "offset": "0x32",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                17826
+                            ]
+                        },
+                        {
+                            "offset": "0x33",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                7762
+                            ]
+                        },
+                        {
+                            "offset": "0x34",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                17578
+                            ]
+                        },
+                        {
+                            "offset": "0x35",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                59474
+                            ]
+                        },
+                        {
+                            "offset": "0x3E",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                16245
+                            ]
+                        },
+                        {
+                            "offset": "0x3F",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                49807
+                            ]
+                        },
+                        {
+                            "offset": "0x42",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                16751
+                            ]
+                        },
+                        {
+                            "offset": "0x43",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                44564
+                            ]
+                        },
+                        {
+                            "offset": "0x46",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                16967
+                            ]
+                        },
+                        {
+                            "offset": "0x47",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                52429
+                            ]
+                        },
+                        {
+                            "offset": "0xC8",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                17351
+                            ]
+                        },
+                        {
+                            "offset": "0xC9",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                4588
+                            ]
+                        },
+                        {
+                            "offset": "0xCA",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                17350
+                            ]
+                        },
+                        {
+                            "offset": "0xCB",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                60621
+                            ]
+                        },
+                        {
+                            "offset": "0xCC",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                17351
+                            ]
+                        },
+                        {
+                            "offset": "0xCD",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                61276
+                            ]
+                        },
+                        {
+                            "offset": "0x48",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                18080
+                            ]
+                        },
+                        {
+                            "offset": "0x49",
+                            "behaviour": "const",
+                            "type": "U16",
+                            "value": [
+                                55219
+                            ]
+                        },
+                        {
+                            "offset": "0x4A",
                             "behaviour": "const",
                             "type": "U16",
                             "value": [
@@ -117,7 +567,7 @@
                             ]
                         },
                         {
-                            "offset": "0x7 ",
+                            "offset": "0x4B",
                             "behaviour": "const",
                             "type": "U16",
                             "value": [
@@ -125,675 +575,67 @@
                             ]
                         },
                         {
-                            "offset": "0x8 ",
+                            "offset": "0x4C",
                             "behaviour": "const",
                             "type": "U16",
                             "value": [
-                                0
+                                17803
                             ]
                         },
                         {
-                            "offset": "0x9 ",
+                            "offset": "0x4D",
                             "behaviour": "const",
                             "type": "U16",
                             "value": [
-                                0
+                                2867
                             ]
                         },
                         {
-                            "offset": "0xa ",
+                            "offset": "0x4E",
                             "behaviour": "const",
                             "type": "U16",
                             "value": [
-                                0
+                                17351
                             ]
                         },
                         {
-                            "offset": "0xb ",
+                            "offset": "0x4F",
                             "behaviour": "const",
                             "type": "U16",
                             "value": [
-                                0
+                                7537
                             ]
                         },
                         {
-                            "offset": "0xc ",
+                            "offset": "0x154",
                             "behaviour": "const",
                             "type": "U16",
                             "value": [
-                                0
+                                18080
                             ]
                         },
                         {
-                            "offset": "0xd ",
+                            "offset": "0x155",
                             "behaviour": "const",
                             "type": "U16",
                             "value": [
-                                0
+                                55219
                             ]
                         },
                         {
-                            "offset": "0xe ",
+                            "offset": "0x156",
                             "behaviour": "const",
                             "type": "U16",
                             "value": [
-                                0
+                                17815
                             ]
                         },
                         {
-                            "offset": "0xf ",
+                            "offset": "0x157",
                             "behaviour": "const",
                             "type": "U16",
                             "value": [
-                                0
-                            ]
-                        },
-                        {
-                            "offset": "0x10 ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                0
-                            ]
-                        },
-                        {
-                            "offset": "0x11 ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                0
-                            ]
-                        },
-                        {
-                            "offset": "0x12 ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                0
-                            ]
-                        },
-                        {
-                            "offset": "0x13 ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                0
-                            ]
-                        },
-                        {
-                            "offset": "0x14 ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                0
-                            ]
-                        },
-                        {
-                            "offset": "0x15 ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                0
-                            ]
-                        },
-                        {
-                            "offset": "0x16 ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                0
-                            ]
-                        },
-                        {
-                            "offset": "0x17 ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                0
-                            ]
-                        },
-                        {
-                            "offset": "0x18 ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                0
-                            ]
-                        },
-                        {
-                            "offset": "0x19 ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                0
-                            ]
-                        },
-                        {
-                            "offset": "0x1a ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                0
-                            ]
-                        },
-                        {
-                            "offset": "0x1b ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                0
-                            ]
-                        },
-                        {
-                            "offset": "0x1c ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                0
-                            ]
-                        },
-                        {
-                            "offset": "0x1d ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                0
-                            ]
-                        },
-                        {
-                            "offset": "0x1e ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                16256
-                            ]
-                        },
-                        {
-                            "offset": "0x1f ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                0
-                            ]
-                        },
-                        {
-                            "offset": "0x20 ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                16256
-                            ]
-                        },
-                        {
-                            "offset": "0x21 ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                0
-                            ]
-                        },
-                        {
-                            "offset": "0x22 ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                16256
-                            ]
-                        },
-                        {
-                            "offset": "0x23 ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                0
-                            ]
-                        },
-                        {
-                            "offset": "0x24 ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                16933
-                            ]
-                        },
-                        {
-                            "offset": "0x25 ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                65294
-                            ]
-                        },
-                        {
-                            "offset": "0x26 ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                17208
-                            ]
-                        },
-                        {
-                            "offset": "0x27 ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                6309
-                            ]
-                        },
-                        {
-                            "offset": "0x28 ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                49837
-                            ]
-                        },
-                        {
-                            "offset": "0x29 ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                22749
-                            ]
-                        },
-                        {
-                            "offset": "0x2a ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                17249
-                            ]
-                        },
-                        {
-                            "offset": "0x2b ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                63988
-                            ]
-                        },
-                        {
-                            "offset": "0x2c ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                0
-                            ]
-                        },
-                        {
-                            "offset": "0x2d ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                0
-                            ]
-                        },
-                        {
-                            "offset": "0x2e ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                15696
-                            ]
-                        },
-                        {
-                            "offset": "0x2f ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                62328
-                            ]
-                        },
-                        {
-                            "offset": "0x30 ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                15900
-                            ]
-                        },
-                        {
-                            "offset": "0x31 ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                46746
-                            ]
-                        },
-                        {
-                            "offset": "0x32 ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                0
-                            ]
-                        },
-                        {
-                            "offset": "0x33 ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                0
-                            ]
-                        },
-                        {
-                            "offset": "0x34 ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                0
-                            ]
-                        },
-                        {
-                            "offset": "0x35 ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                0
-                            ]
-                        },
-                        {
-                            "offset": "0x36 ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                0
-                            ]
-                        },
-                        {
-                            "offset": "0x37 ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                0
-                            ]
-                        },
-                        {
-                            "offset": "0x38 ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                0
-                            ]
-                        },
-                        {
-                            "offset": "0x39 ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                0
-                            ]
-                        },
-                        {
-                            "offset": "0x3a ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                0
-                            ]
-                        },
-                        {
-                            "offset": "0x3b ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                0
-                            ]
-                        },
-                        {
-                            "offset": "0x3c ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                0
-                            ]
-                        },
-                        {
-                            "offset": "0x3d ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                0
-                            ]
-                        },
-                        {
-                            "offset": "0x3e ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                0
-                            ]
-                        },
-                        {
-                            "offset": "0x3f ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                0
-                            ]
-                        },
-                        {
-                            "offset": "0x40 ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                0
-                            ]
-                        },
-                        {
-                            "offset": "0x41 ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                0
-                            ]
-                        },
-                        {
-                            "offset": "0x42 ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                0
-                            ]
-                        },
-                        {
-                            "offset": "0x43 ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                0
-                            ]
-                        },
-                        {
-                            "offset": "0x44 ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                0
-                            ]
-                        },
-                        {
-                            "offset": "0x46 ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                0
-                            ]
-                        },
-                        {
-                            "offset": "0x47 ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                0
-                            ]
-                        },
-                        {
-                            "offset": "0xc8 ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                17347
-                            ]
-                        },
-                        {
-                            "offset": "0xc9 ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                46625
-                            ]
-                        },
-                        {
-                            "offset": "0xca ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                17347
-                            ]
-                        },
-                        {
-                            "offset": "0xcb ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                46013
-                            ]
-                        },
-                        {
-                            "offset": "0xcc ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                17347
-                            ]
-                        },
-                        {
-                            "offset": "0xcd ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                45239
-                            ]
-                        },
-                        {
-                            "offset": "0xce ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                45239
-                            ]
-                        },
-                        {
-                            "offset": "0x48 ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                0
-                            ]
-                        },
-                        {
-                            "offset": "0x49 ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                0
-                            ]
-                        },
-                        {
-                            "offset": "0x4a ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                0
-                            ]
-                        },
-                        {
-                            "offset": "0x4b ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                0
-                            ]
-                        },
-                        {
-                            "offset": "0x4c ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                0
-                            ]
-                        },
-                        {
-                            "offset": "0x4d ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                0
-                            ]
-                        },
-                        {
-                            "offset": "0x4e ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                14979
-                            ]
-                        },
-                        {
-                            "offset": "0x4f ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                4719
-                            ]
-                        },
-                        {
-                            "offset": "0x50 ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                4719
-                            ]
-                        },
-                        {
-                            "offset": "0x154 ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                0
-                            ]
-                        },
-                        {
-                            "offset": "0x155 ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                0
-                            ]
-                        },
-                        {
-                            "offset": "0x156 ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                0
-                            ]
-                        },
-                        {
-                            "offset": "0x157 ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                0
-                            ]
-                        },
-                        {
-                            "offset": "0x158 ",
-                            "behaviour": "const",
-                            "type": "U16",
-                            "value": [
-                                0
+                                32031
                             ]
                         }
                     ]
